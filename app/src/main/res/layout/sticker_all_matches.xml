@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="238dp"
+        android:background="@color/background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_border"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <ImageView
+        android:id="@+id/samTeam1Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/team_1_image"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/fmTvDate"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <ImageView
+        android:id="@+id/samTeam2Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/team_2_image"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/fmTvStatus"
+        tools:srcCompat="@tools:sample/avatars[10]" />
+
+    <TextView
+        android:id="@+id/samTeam1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/team_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/samTeam1Image"
+        app:layout_constraintStart_toStartOf="@+id/samTeam1Image"
+        app:layout_constraintTop_toBottomOf="@+id/samTeam1Image" />
+
+    <TextView
+        android:id="@+id/samTeam2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/team_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/samTeam2Image"
+        app:layout_constraintStart_toStartOf="@+id/samTeam2Image"
+        app:layout_constraintTop_toBottomOf="@+id/samTeam2Image" />
+
+    <TextView
+        android:id="@+id/samMatchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00FDD835"
+        android:text="@string/qualifiers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="34dp"
+        android:layout_height="59dp"
+        android:contentDescription="@string/vs"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/samMatchName"
+        app:srcCompat="@drawable/vs" />
+
+    <TextView
+        android:id="@+id/fmTvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/status"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/samMatchName" />
+
+    <TextView
+        android:id="@+id/fmTvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/samMatchName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SelectedMatch">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="254dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_border_colored"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asmTvT1Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="@+id/asmTvT1Point"
+        app:layout_constraintEnd_toStartOf="@+id/asmTvT1Point"
+        app:layout_constraintTop_toTopOf="@+id/asmTvT1Point"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/asmTvT1Point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <TextView
+        android:id="@+id/asmTvT2Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="@+id/asmTvT2Point"
+        app:layout_constraintStart_toEndOf="@+id/asmTvT2Point"
+        app:layout_constraintTop_toTopOf="@+id/asmTvT2Point"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/asmTvT2Point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/agef"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/asmTvT2Point" />
+
+    <TextView
+        android:id="@+id/asmTvTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/team_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/asmTvT1Point" />
+
+    <TextView
+        android:id="@+id/asmTvTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/team_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/asmTvT2Point" />
+
+    <Button
+        android:id="@+id/asmBtnSetTeam"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_colored_shape"
+        android:text="@string/set_team"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/asmTvTeam2" />
+
+    <ListView
+        android:id="@+id/asmLvComments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:divider="@color/background_color"
+        android:dividerHeight="8dp"
+        android:stackFromBottom="true"
+        app:layout_constraintBottom_toTopOf="@+id/asmBtnsend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvCommentary" />
+
+    <Button
+        android:id="@+id/asmBtnMyTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_colored_shape"
+        android:enabled="true"
+        android:text="@string/my_team"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/asmTvTeam2" />
+
+    <Button
+        android:id="@+id/asmBtnLeaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_colored_shape"
+        android:enabled="true"
+        android:text="Leader board"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/asmTvTeam2" />
+
+    <EditText
+        android:id="@+id/asmEtcomment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_border"
+        android:ems="10"
+        android:hint="Type here..."
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/asmBtnsend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asmLvComments" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/asmBtnsend"
+        android:layout_width="75dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_menu_send" />
+
+    <TextView
+        android:id="@+id/TvCommentary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:text="Match will Start Soon"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
