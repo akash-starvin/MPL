@@ -5,8 +5,11 @@ MPL is a fantasy sports platform that allows users to play fantasy volleybal
 It is a social networking application and fun game application. This application is based on volleyball leagues such as MPL (Milagres Premier League) held at Milagres College. 
 
 It is just like playing volleyball match, but we won’t play directly. Here we will get to select match we want to participate, based on the selected match we will get to create a team of any 8 players in total from both the teams, having a maximum of 5 players from one team. 
+
 In this application we will get real time score and player points updation. Points are assigned to each player based on their performance and based on the player points a leaderboard for the match and the season are generated. 
+
 If a user’s team has the player whose points have been updated then team total will be updated and reflected on the leaderboard. Multiple users will create their own team of 8 players and whichever team gets the highest points against other teams will be considered as winner. 
+
 This leader board is generated for every match as well as for the season which is a total of all the match leaderboards. It also provides a space for users to add comments to an ongoing match.
 
 ## Modules
@@ -22,10 +25,10 @@ This leader board is generated for every match as well as for the season which i
 
 ## Functionalities
 1. View matches and score
-2. Lets the user to set team of thier choice 
+2. Lets the user to set team of their choice 
 3. Set captain (2x points) and vice-captain (1.5x points)
 4. Lets the user to post comments
-5. Notifies user whenever match is about to start (notofication)
+5. Notifies user whenever match is about to start (notification)
 6. Notification will displays match score
 7. Lets the user to change password, if forgotten
 
